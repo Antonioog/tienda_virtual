@@ -1,6 +1,6 @@
-<a href="https://www.clipartmax.com/middle/m2i8A0i8i8Z5K9Z5_responsive-web-design-html-and-css-icon/" target="_blank">
-
-#Tienda Virtual.
+<p align="center">
+  <a href="https://html.com/" target="blank"><img src="https://www.clipartmax.com/middle/m2H7H7G6m2G6H7A0_html-and-css-logo/" width="200" alt="Nest Logo" /></a>
+</p>#Tienda Virtual.
 
 Este proyecto es una practica inicial de maquetado de una paguina web de tienda virtual que ofrece diferentes tipos de productos.
 
@@ -23,5 +23,5 @@ Creamos un formulario sin funcionalidad, solo puro maquetado
 
 HTML.
 CSS(mobile first).
-Flexbox.
+Flexbox
 Grid.
