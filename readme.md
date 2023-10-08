@@ -2,7 +2,9 @@
   <a href="http://www.w3.org/html/logo/">
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
 </a>
-</p>#Tienda Virtual.
+</p>
+
+#Tienda Virtual.
 
 Este proyecto es una practica inicial de maquetado de una paguina web de tienda virtual que ofrece diferentes tipos de productos.
 
