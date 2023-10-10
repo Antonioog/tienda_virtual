@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /**1 rem = a 10px**/
 }
 *,
 *:before,
@@ -17,34 +18,55 @@ img {
   max-width: 100%;
   display: block;
 }
+body {
+  font-family: "Playfair Display";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato";
+  margin: 3rem 0 4rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
 
 /**Header y Navegacion**/
 
 .nombre-sitio {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 .nombre-sitio span {
   color: #037bc0;
 }
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
 .contenedor-navegacion {
-  border-top: 1px solid #e1e1e1;
+  border-top: 0.4rem solid #037bc0;
 }
 .contenedor {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .hero {
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 50rem;
+  background-position: center center;
 }
 
 /**Categorias**/
@@ -54,17 +76,157 @@ img {
 .categoria a {
   text-align: center;
   display: block;
-  padding: 20px;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: 2rem;
 }
 .categoria a:hover {
   background-color: #037bc0;
   color: #fff;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  transition: background-color 1s ease;
 }
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+/**Sobre nosotros**/
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(../img/nosotros.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 65rem;
+}
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+.texto-nosotros {
+  grid-column: 2 / 3;
+  color: #fff;
+}
+
+/*Listado de productos*/
+.contenido-principal {
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+.producto {
+  background-color: #037bc0;
+}
+.texto-producto h3 {
+  margin: 1.5rem;
+}
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
+}
+.texto-producto {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+.texto-producto .precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.texto-producto a {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 2rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+.texto-producto a:hover {
+  background-color: #769c02;
+}
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+.producto:nth-child(1) {
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(2) {
+  grid-column: 1 / 4;
+}
+.producto:nth-child(2) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(3) {
+  grid-column: 4 / 7;
+}
+.producto:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(4) {
+  grid-column: 1 / 3;
+}
+.producto:nth-child(4) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(5) {
+  grid-column: 3 / 5;
+}
+.producto:nth-child(5) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(6) {
+  grid-column: 5 / 7;
+}
+.producto:nth-child(6) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Footer*/
+.site-footer {
+  border-top: 1px solid #e1e1e1;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.grid-footer {
+  display: flex;
+  gap: 2rem;
+}
+.grid-footer div {
+  flex: 1;
+}
+.footer-menu a {
+  display: block;
+}
+.copyright {
+  margin-top: 5rem;
+  text-align: center;
 }
