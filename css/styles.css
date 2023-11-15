@@ -16,11 +16,22 @@ a {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
 /**Header y Navegacion**/
@@ -58,6 +69,14 @@ img {
 .categoria a {
   display: block;
   text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-radius: 0 0 10px 0;
 }
 
 .categorias h2 {
