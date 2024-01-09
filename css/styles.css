@@ -64,9 +64,11 @@ h3 {
   padding: 1rem;
   transition: background-color 0.3s ease;
   text-align: center;
+  border: none;
 }
 .btn:hover {
   background-color: #769c02;
+  cursor: pointer;
 }
 
 /**Header y Navegacion**/
@@ -286,4 +288,33 @@ h3 {
   width: 40rem;
   height: 40rem;
   object-fit: cover;
+}
+
+/**Formulario**/
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+.formulario legend {
+  width: 100%;
+  background-color: #005485;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.campo label {
+  flex-basis: 10rem;
+}
+.campo .input {
+  flex: 1;
 }

@@ -28,27 +28,46 @@
 
     <main class="contenido-principal contenedor">
       <h2 class="text-center">Contacto</h2>
-      <form>
+      <form class="formulario">
         <fieldset>
           <legend>Tus Datos</legend>
           <div class="campo">
             <label for="nombre">Nombre:</label>
-            <input id="nombre" type="text" placeholder="Tu Nombre" required />
+            <input
+              class="input"
+              id="nombre"
+              type="text"
+              placeholder="Tu Nombre"
+              required
+            />
           </div>
 
           <div class="campo">
             <label for="asunto">Asunto:</label>
-            <input id="asunto" type="text" placeholder="Tu Asunto" required />
+            <input
+              class="input"
+              id="asunto"
+              type="text"
+              placeholder="Tu Asunto"
+              required
+            />
           </div>
 
           <div class="campo">
             <label for="email">E-mail:</label>
-            <input id="email" type="email" placeholder="Tu E-mail" required />
+            <input
+              class="input"
+              id="email"
+              type="email"
+              placeholder="Tu E-mail"
+              required
+            />
           </div>
 
           <div class="campo">
             <label for="telefono">Teléfono</label>
             <input
+              class="input"
               id="telefono"
               type="tel"
               placeholder="Tu Teléfono"
@@ -58,7 +77,13 @@
 
           <div class="campo">
             <label for="mensaje">Mensaje:</label>
-            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+            <textarea
+              class="input"
+              name=""
+              id="mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
         </fieldset>
 
@@ -66,7 +91,7 @@
           <legend>País</legend>
           <div class="campo">
             <label for="pais">País:</label>
-            <select name="" id="pais">
+            <select class="input" name="" id="pais">
               <option value="">--Seleccione--</option>
               <option value="MX">México</option>
               <option value="PR">Perú</option>
@@ -91,8 +116,13 @@
           </div>
 
           <div class="campo">
-            <label for="categoria">Ctaegoría de Interés</label>
-            <input list="categorias" name="categorias" type="text" />
+            <label for="categoria">Ctaegoría</label>
+            <input
+              class="input"
+              list="categorias"
+              name="categorias"
+              type="text"
+            />
             <datalist id="categorias">
               <option value="Cocina"></option>
               <option value="Exterior"></option>
@@ -103,7 +133,7 @@
           </div>
         </fieldset>
 
-        <input type="submit" value="Enviar Formulario" />
+        <input class="btn" type="submit" value="Enviar Formulario" />
       </form>
     </main>
 
